@@ -1,0 +1,27 @@
+{
+  "name": "gwserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "bin": "server.js",
+  "scripts": {
+    "test": "echo 1"
+  },
+  "pkg": {
+    "targets": [
+      "node16-win-x64"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "buffer-replace": "^1.0.0",
+    "https": "^1.0.0",
+    "ini": "^1.3.8",
+    "net": "^1.0.2",
+    "pkg": "^5.8.1",
+    "throttle": "^1.0.3",
+    "ws": "^8.18.0"
+  }
+}

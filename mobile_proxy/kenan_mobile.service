@@ -1,0 +1,14 @@
+[Unit]
+Description=Kenan mobile Web Service
+After=network.target
+
+[Service]
+Type=simple
+User=root                             
+WorkingDirectory=/opt/mobile 
+ExecStart=/bin/bash /opt/mobile/mobile_start.sh
+Restart=on-failure                    
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target

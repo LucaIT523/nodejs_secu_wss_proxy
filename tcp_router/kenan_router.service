@@ -1,0 +1,14 @@
+[Unit]
+Description=Kenan Router Web Service
+After=network.target
+
+[Service]
+Type=simple
+User=root                             
+WorkingDirectory=/opt/router 
+ExecStart=/bin/bash /opt/router/router_start.sh
+Restart=on-failure                    
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
